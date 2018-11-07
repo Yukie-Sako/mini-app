@@ -56,4 +56,5 @@ gem 'devise'
 gem 'kaminari'
 gem 'materialize-sass'
 gem 'autoprefixer-rails', '8.6.5'
+gem 'pry-rails'
 
