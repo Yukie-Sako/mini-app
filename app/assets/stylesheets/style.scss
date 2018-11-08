@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 #devise-content {
   width: 700px;
   height: 400px;
@@ -32,4 +36,71 @@
   text-align: center;
   font-size: 30px;
 }
+
+.main-content {
+  width: 95%;
+  height: 100%;
+  margin:0 auto;
+  padding: 20px 0 0 0;
+}
+
+.frame {
+  width: 300px;
+  float: left;
+  padding: 10px 10px 0 0;
+}
+
+
+.card {
+  width: 260px;
+  height: 420px;
+  position: relative;
+}
+
+.blog-title {
+  color: #fff;
+  height:20px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+  padding-left: 10px;
+}
+
+.author {
+  font-size: 11px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.blog-text {
+  font-size: 11px;
+}
+
+.card-image {
+  width: 260px;
+}
+
+.card-content {
+  height: 50px;
+  padding: 5px;
+}
+
+.card-action {
+  height: 15px;
+  padding: 0;
+}
+
+.pagination {
+  clear: both;
+}
+
+.delete-link {
+  font-size: 11px;
+}
+
+.edit-blog {
+  font-size: 11px;
+}
+
 
