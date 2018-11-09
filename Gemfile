@@ -57,4 +57,5 @@ gem 'kaminari'
 gem 'materialize-sass'
 gem 'autoprefixer-rails', '8.6.5'
 gem 'pry-rails'
+gem 'font-awesome-rails'
 
