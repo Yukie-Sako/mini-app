@@ -52,17 +52,17 @@ html, body {
 
 
 .card {
-  width: 260px;
+  width: 270px;
   height: 420px;
   position: relative;
 }
 
 .blog-title {
-  color: #fff;
+  color: white;
   height:20px;
   font-size: 16px;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   padding-left: 10px;
 }
 
@@ -70,7 +70,7 @@ html, body {
   font-size: 11px;
   position: absolute;
   right: 5px;
-  bottom: 5px;
+  bottom: -15px;
 }
 
 .blog-text {
@@ -78,27 +78,40 @@ html, body {
 }
 
 .card-image {
-  width: 260px;
+  width: 270px;
 }
 
+// .fa {
+//   color: #fff;
+//   position: absolute;
+//   right: 10px;
+//   top: 10px;
+// }
 .card-content {
   height: 50px;
   padding: 5px;
+  overflow:scroll;
+}
+
+.user_name {
+  padding-left: 20px;
+  color: gray;
+  font-weight: bold;
 }
 
 .card-action {
-  height: 15px;
-  padding: 0;
+  border-top: none;
+  padding: 5px 10px;
 }
 
 .pagination {
   clear: both;
+  text-align: center;
 }
 
-.delete-link {
+.delete-blog {
   font-size: 11px;
 }
-
 .edit-blog {
   font-size: 11px;
 }
