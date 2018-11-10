@@ -1,0 +1,10 @@
+<div class="contents row" >
+  <%= render "blogs/nav" %>
+    <div class="main-content">
+    <p class="user_name"><%= @name %>さんの投稿一覧</p>
+    <% @blogs.each do |blog| %>
+     <%= render partial: "blogs/blog", locals: { blog: blog} %>
+    <% end %>
+  </div>
+    <%= paginate(@blogs) %>
+</div>
