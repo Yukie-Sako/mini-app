@@ -6,17 +6,17 @@
           <img src=<%= blog.image %>>
           <span class="blog-title"><%=blog.title %></span>
           <span class="author">投稿者: <%= blog.user.name %></span>
-        </div>
+          <ul>
+           <% if user_signed_in? && current_user.id == blog.user_id %>
+             <li class="delete-blog">
+              <%= link_to "削除", "/blogs/#{blog.id}", method: :delete %></li>
+             <li class="edit-blog">
+              <%= link_to "編集", "/blogs/#{blog.id}/edit", method: :get  %></li>
+            <% end %>
+            </ul>
+          </div>
         <div class="card-content">
           <p class="blog-text"><%= blog.text %></p>
-        </div>
-        <div class="card-action">
-         <% if user_signed_in? && current_user.id == blog.user_id %>
-           <span class="delete-link">
-           <%= link_to "削除", "/blogs/#{blog.id}", method: :delete %></span>
-           <span class="edit-blog">
-           <%= link_to "編集", "/blogs/#{blog.id}/edit", method: :get  %></span>
-         <% end %>
         </div>
       </div>
     </div>
